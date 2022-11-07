@@ -96,19 +96,19 @@ def web_sushi_guild(privatekey, amount, to_token_address, to_symbol):
 random_amount = random.randint(6, 9)
 swaps = [
     {'address': '0x94b008aA00579c1307B0EF2c499aD98a8ce58e58',
-    'symbol': 'USDT',
+    'symbol': 'USDT'},
 
     {'address': '0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8',
-    'symbol': 'USDC',
+    'symbol': 'USDC'},
 
     {'address': '0x6694340fc020c5E6B96567843da2df01b2CE1eb6',
-    'symbol': 'STG',
+    'symbol': 'STG'},
 
     {'address': '0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a',
-    'symbol': 'GMX',
+    'symbol': 'GMX'},
 
     {'address': '0xf97f4df75117a78c1A5a0DBb814Af92458539FB4',
-    'symbol': 'LINK',
+    'symbol': 'LINK'},
 ]
 
 def func_chunks_generators(lst, n):
