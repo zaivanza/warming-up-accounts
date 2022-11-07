@@ -125,7 +125,7 @@ if __name__ == "__main__":
 
     cprint(f'\nsubscribe to us : https://t.me/hodlmodeth', 'magenta')
     
-    with open("arbitrum/private_keys.txt", "r") as f:
+    with open("private_keys.txt", "r") as f:
         keys_list = [row.strip() for row in f]
 
 
@@ -148,10 +148,5 @@ if __name__ == "__main__":
             web_sushi_guild(privatekey, amount_to_swap, to_token_address, to_symbol)
 
             time.sleep(random.randint(40, 120))
-
-
-
-
-
 
 
