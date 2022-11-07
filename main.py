@@ -137,7 +137,7 @@ if __name__ == "__main__":
 
         for swap in done[0]:
             random_amount = random.randint(6, 9)
-            amount_to_swap = round(random.uniform(0.000002, 0.000009), random_amount)
+            amount_to_swap = round(random.uniform(0.000001, 0.000009), random_amount)
             to_token_address = swap['address']
             to_symbol = swap['symbol']
 
