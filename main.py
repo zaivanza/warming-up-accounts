@@ -97,23 +97,18 @@ random_amount = random.randint(6, 9)
 swaps = [
     {'address': '0x94b008aA00579c1307B0EF2c499aD98a8ce58e58',
     'symbol': 'USDT',
-    'amount': round(random.uniform(0.00005, 0.00009), random_amount)},
 
     {'address': '0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8',
     'symbol': 'USDC',
-    'amount': round(random.uniform(0.00005, 0.00009), random_amount)},
 
     {'address': '0x6694340fc020c5E6B96567843da2df01b2CE1eb6',
     'symbol': 'STG',
-    'amount': round(random.uniform(0.00005, 0.00009), random_amount)},
 
     {'address': '0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a',
     'symbol': 'GMX',
-    'amount': round(random.uniform(0.00005, 0.00009), random_amount)},
 
     {'address': '0xf97f4df75117a78c1A5a0DBb814Af92458539FB4',
     'symbol': 'LINK',
-    'amount': round(random.uniform(0.00005, 0.00009), random_amount)}, 
 ]
 
 def func_chunks_generators(lst, n):
@@ -141,8 +136,8 @@ if __name__ == "__main__":
         cprint(f'\n=============== start : {privatekey} ===============', 'white')
 
         for swap in done[0]:
-
-            amount_to_swap = swap['amount']
+            random_amount = random.randint(6, 9)
+            amount_to_swap = round(random.uniform(0.000002, 0.000009), random_amount)
             to_token_address = swap['address']
             to_symbol = swap['symbol']
 
