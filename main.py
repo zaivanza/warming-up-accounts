@@ -95,9 +95,6 @@ def web_sushi_guild(privatekey, amount, to_token_address, to_symbol):
 
 random_amount = random.randint(6, 9)
 swaps = [
-    {'address': '0x94b008aA00579c1307B0EF2c499aD98a8ce58e58',
-    'symbol': 'USDT'},
-
     {'address': '0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8',
     'symbol': 'USDC'},
 
@@ -143,6 +140,6 @@ if __name__ == "__main__":
 
             web_sushi_guild(privatekey, amount_to_swap, to_token_address, to_symbol)
 
-            time.sleep(random.randint(40, 120))
+            time.sleep(random.randint(5, 15))
 
 
